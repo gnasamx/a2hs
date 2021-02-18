@@ -9,7 +9,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
   installBtn.style.display = 'block';
 });
 
-butInstall.addEventListener('click', async () => {
+installBtn.addEventListener('click', async () => {
   console.log('👍', 'butInstall-clicked');
   installBtn.style.display = 'none';
   const promptEvent = window.deferredPrompt;
@@ -20,7 +20,6 @@ butInstall.addEventListener('click', async () => {
   const result = await promptEvent.userChoice;
   console.log('👍', 'userChoice', result);
   window.deferredPrompt = null;
-  divInstall.classList.toggle('hidden', true);
 });
 
 window.addEventListener('appinstalled', (event) => {
