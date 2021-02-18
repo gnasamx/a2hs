@@ -5,16 +5,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="manifest" href="/manifest.json" />
+
+    <!-- For iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/images/gs-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/images//gs-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/images/gs-icon-512x512.png"
+    />
   </head>
   <body>
     <h1>Hello World!</h1>
 
-    <!-- Install button, hidden by default -->
-    <div id="installContainer" class="hidden">
-      <button id="installBtn" type="button">Install</button>
-    </div>
+    <button id="installBtn" type="button">Install</button>
 
-    <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </body>
 </html>
